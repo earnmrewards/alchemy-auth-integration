@@ -4,7 +4,7 @@ import { alchemy, arbitrumSepolia } from "@account-kit/infra";
 
 export const config = createConfig(
   {
-    transport: alchemy({ apiKey: "pWRIWfoUE9MIS3G2W_4Ai74lPInS3Sy8" }),
+    transport: alchemy({ apiKey: import.meta.env.VITE_API_KEY }),
     chain: arbitrumSepolia,
     ssr: false,
   },
